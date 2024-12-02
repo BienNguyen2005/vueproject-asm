@@ -20,22 +20,22 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 'latest'
-        cache: 'npm'
+        # Bỏ dòng cache: 'npm' vì không có file lock ở thư mục gốc
 
     # Backend setup & run
     - name: Install backend dependencies
       working-directory: ./backend
       run: |
-        npm ci
+        npm install
         npm run start &
       
     # Frontend setup & run
     - name: Install frontend dependencies
       working-directory: ./frontend
       run: |
-        npm ci
+        npm install
         npm run dev &
         
-    # Keep the workflow running for a while to ensure services start properly
+    # Keep the workflow running for a while
     - name: Keep alive
       run: sleep 30
