@@ -1,5 +1,5 @@
 <template>
-  <PageHeader title='Clean Blog' />
+  <PageHeader />
   <BlogList />
 </template>
 
