@@ -1,10 +1,10 @@
 project blog not done . 
 db using : mongodb
-frontend: 
+- frontend: 
 + runtime : nodejs, bunjs.
 + lang: javascript, css, html.
 + framework: axios, vuejs, bootstrap.
-backend: 
+- backend: 
 + lang: javascript
 + runtime : nodejs, bunjs.
 + framework: experess
